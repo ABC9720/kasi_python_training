@@ -468,9 +468,9 @@
 # fibo_nos(10)
 
 """rotating elements in a list"""
-items = ['apple', 1.2, 'google', 12.6, 26, '100']
-k = 2
-for i in range(k):
-    item = items.pop()
-    items.insert(0,item)
-print(items)
+# items = ['apple', 1.2, 'google', 12.6, 26, '100']
+# k = 2
+# for i in range(k):
+#     item = items.pop()
+#     items.insert(0,item)
+# print(items)
