@@ -46,3 +46,8 @@
 # wap to convert allthe negeative numbers into positive using map
 # wap that returns the list of numbers raised to the power of their indices using map
 # wap that returns all the words in lower case in the given sentence
+
+import os
+path = r"C:\Users\Hp\PycharmProjects\python_training\file handling\sample.txt"
+with open(path) as f1:
+    print(f1.read())

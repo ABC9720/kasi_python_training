@@ -23,8 +23,7 @@
 
 """using dictionary comprehension"""
 # string_ = 'kasi nadh'
-# words = string_.split()
-# dict_ = {word: len(word) for word in words}
+# dict_ = {word: len(word) for word in string_.split()}
 # print(dict_ )
 
 #******************************************************************
@@ -134,3 +133,20 @@ else reverse it"""
 # string = "python"
 # d = {char: ord(char) for char in string}
 # print(d)
+
+
+# list_ = ['kasi','kasi','kasi','123']
+# d = {}
+# for key in list_:
+#     if key not in d:
+#         d[key] = 1
+#     else:
+#         d[key] += 1
+# print(d)
+#
+# dd ={key: 1 if key not in d else +1 for key in list_}
+# print(dd)
+
+d  = {'a': 1, 'b':2 }
+dd = {d[key]+: key for key in d}
+print(dd)

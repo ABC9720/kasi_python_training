@@ -467,10 +467,75 @@
 #         second = c
 # fibo_nos(10)
 
-"""rotating elements in a list"""
-# items = ['apple', 1.2, 'google', 12.6, 26, '100']
-# k = 2
-# for i in range(k):
-#     item = items.pop()
-#     items.insert(0,item)
-# print(items)
+# l = [1,2,3,4]
+# res  = lambda num: num[2] % 2 == 0
+# print(res(l))
+
+
+# res = map(lambda x: x%2 == 0, [1,2,3,4])
+# print(list(res))
+
+# a = map(lambda x: x% 2 == 0, b)
+# print(a(10))
+#
+# a = lambda x: x*2
+# print(a((1,2)))
+
+# a = lambda x,y: x*2, y+3
+# """lambda has collection as argument but we cant iterate it """
+
+
+"""even numbers"""
+# def ev(end, start = 0):
+#     list_ = []
+#     for num in range(start, end+1):
+#         if num % 2 == 0:
+#             list_.append(num)
+#     return list_
+#
+# print(ev(50))
+
+""""prime numbers"""
+# def prime(end, start=2):
+#     res = []
+#     for num in range(start, end):
+#         for i in range(2,num):
+#             if num % i == 0:
+#                 break
+#         else:
+#             res.append(num)
+#     return res
+#
+# print(prime(20))
+
+
+"""fibonaci series"""
+# def fibo(n):
+#     first = 0
+#     second = 1
+#     i = 0
+#     while i < n:
+#         c = first +second
+#         print(first)
+#         first = second
+#         second = c
+#         i += 1
+#
+# fibo(10)
+
+
+"""checking a number is a fibo number or not"""
+def fibo(num):
+    first = 0
+    second = 1
+    while first<=num: # when we want to find a number is a fibo number or not
+        if num == first:
+            return f"the {num} is a fibonaci no"
+            break
+        else:
+            c = first + second
+            first = second
+            second = c
+    return f"the {num} is not a fibo number"
+
+print(fibo(3))
