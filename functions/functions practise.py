@@ -523,19 +523,39 @@
 #
 # fibo(10)
 
+#
+# """checking a number is a fibo number or not"""
+# def fibo(num):
+#     first = 0
+#     second = 1
+#     while first<=num: # when we want to find a number is a fibo number or not
+#         if num == first:
+#             return f"the {num} is a fibonaci no"
+#             break
+#         else:
+#             c = first + second
+#             first = second
+#             second = c
+#     return f"the {num} is not a fibo number"
+#
+# print(fibo(3))
 
-"""checking a number is a fibo number or not"""
-def fibo(num):
-    first = 0
-    second = 1
-    while first<=num: # when we want to find a number is a fibo number or not
-        if num == first:
-            return f"the {num} is a fibonaci no"
-            break
+
+
+num  = 12
+def prime(num):
+    number = num
+    while number > 0:
+        for i in range(2,number):
+            if number % i == 0:
+                flag = False
+            elif flag == True:
+                print(f"the given {number} is a prime number")
+            else:
+                number += 1
         else:
-            c = first + second
-            first = second
-            second = c
-    return f"the {num} is not a fibo number"
+            print(number)
+            return "the next number is prime"
+        break
+print(prime(12))
 
-print(fibo(3))

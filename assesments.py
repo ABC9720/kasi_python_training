@@ -161,11 +161,18 @@ print(list(res))
 # print(res[-1])
 
 
-l = [{'name': 'a','class': 10, 'age': 26},
-     {'name': 'b','class': 10, 'age': 27},
-     {'name': 'c','class': 10, 'age': 25}]
-res = sorted(l, key = lambda item: item['name'])
-print(res)
+# l = [{'name': 'a','class': 10, 'age': 26},
+#      {'name': 'b','class': 10, 'age': 27},
+#      {'name': 'c','class': 10, 'age': 25}]
+# res = sorted(l, key = lambda item: item['name'])
+# print(res)
+
+def temp(item):
+    return item
+
+
+res = filter(temp, [1,2,3])
+print(list(res))
 
 
 
