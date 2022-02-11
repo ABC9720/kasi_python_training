@@ -16,6 +16,10 @@
 # res = lambda num: 'even' if num % 2 == 0 else 'odd'
 # print(res(0))
 
+# """lambda expression to check string is of even length and string stars with vowel0"""
+sequence = 'Iamkasij'
+even = lambda s: s if len(s) % 2 == 0 and s[0].lower() in 'aeiou' else None
+print(even(sequence))
 
 """to check the numbers present inside the list are even or off"""
 # list_ = [1,2,108,320,580]

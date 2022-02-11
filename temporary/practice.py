@@ -545,10 +545,7 @@ n1,n2 = s = [(4,56,78),('one', 'two', 'three')]
 # print(res(sequence))
 
 
-# """lambda expression to check string is of even length and string stars with vowel0"""
-sequence = 'Iamkasij'
-even = lambda s: s if len(s) % 2 == 0 and s[0].lower() in 'aeiou' else None
-print(even(sequence))
+
 
 # """to check whether a stering is a palindrome or not"""
 # sequence = 'kasi'
@@ -706,10 +703,11 @@ of global key word at local name space or global name space"""
 #
 #
 
-list_ = [1,2,3,4]
-def even(item):
-    if item % 2 == 0:
-        return item
+# list_ = [1,2,3,4]
+# def even(item):
+#     if item % 2 == 0:
+#         return item
+#
+# res = map(even, list_)
+# print(list(res))
 
-res = map(even, list_)
-print(list(res))
